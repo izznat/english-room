@@ -40,7 +40,9 @@
 
 <div class="flex h-full flex-col">
 	{#if showConfetti}
-		<div use:confetti={{ stageHeight: 2400 }} class="absolute left-1/2"></div>
+		<div class="absolute inset-0 overflow-hidden">
+			<div use:confetti={{ stageHeight: 2400 }} class="absolute left-1/2"></div>
+		</div>
 	{/if}
 	<div class="border-sand-6 flex h-12 shrink-0 items-center border-x border-b border-dashed px-4">
 		<span class="font-mono text-xs tracking-widest uppercase">English Room</span>
