@@ -70,7 +70,7 @@
 			<div class="p-4">
 				<AudioPlayer src={question.audioPath} />
 			</div>
-			<div class="grid grow grid-rows-2 gap-4 p-4 pt-0">
+			<div class="grid grow grid-rows-[repeat(minmax(6rem,auto)] gap-4 p-4 pt-0">
 				<div class="border-sand-6 rounded-lg border border-dashed">
 					<div class="border-sand-6 flex items-center border-b border-dashed p-4">
 						<h3 class="text-sand-11 inline-block grow text-sm text-pretty">
