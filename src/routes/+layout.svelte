@@ -12,7 +12,7 @@
 
 <Toaster />
 
-<div class="isolate flex h-full justify-center overflow-clip">
+<div class="isolate flex h-full justify-center" id="scroll-layout">
 	<div class="max-w-xl grow">
 		{@render children()}
 	</div>

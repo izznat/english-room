@@ -155,7 +155,12 @@
 							if (number < exercise.length) {
 								pushToast({ data: { type: 'success', description: 'Awesome! Keep it up!' } });
 							} else {
+								document.body.style.overflow = 'hidden';
+								setTimeout(() => {
+									document.body.style.overflow = 'auto';
+								}, 3500);
 								showConfetti = true;
+
 								pushToast({
 									data: { type: 'success', description: `Awesome! Completed in a flash!` }
 								});
