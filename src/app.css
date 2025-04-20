@@ -1,0 +1,220 @@
+@import 'tailwindcss';
+
+@font-face {
+	font-family: 'IBM Plex Mono';
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+	src: url('/fonts/IBMPlexMono-Light.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'IBM Plex Mono';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('/fonts/IBMPlexMono-Regular.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'IBM Plex Mono';
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+	src: url('/fonts/IBMPlexMono-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'IBM Plex Mono';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url('/fonts/IBMPlexMono-Bold.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 100 900;
+	font-display: swap;
+	src: url('/fonts/InterVariable.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: Inter;
+	font-style: italic;
+	font-weight: 100 900;
+	font-display: swap;
+	src: url('/fonts/InterVariable-Italic.woff2') format('woff2');
+}
+
+@import '@radix-ui/colors/black-alpha.css';
+@import '@radix-ui/colors/white-alpha.css';
+
+@import '@radix-ui/colors/blue.css';
+@import '@radix-ui/colors/blue-dark.css';
+@import '@radix-ui/colors/blue-alpha.css';
+@import '@radix-ui/colors/blue-dark-alpha.css';
+
+@import '@radix-ui/colors/grass.css';
+@import '@radix-ui/colors/grass-dark.css';
+@import '@radix-ui/colors/grass-alpha.css';
+@import '@radix-ui/colors/grass-dark-alpha.css';
+
+@import '@radix-ui/colors/sand.css';
+@import '@radix-ui/colors/sand-dark.css';
+@import '@radix-ui/colors/sand-alpha.css';
+@import '@radix-ui/colors/sand-dark-alpha.css';
+
+@import '@radix-ui/colors/tomato.css';
+@import '@radix-ui/colors/tomato-dark.css';
+@import '@radix-ui/colors/tomato-alpha.css';
+@import '@radix-ui/colors/tomato-dark-alpha.css';
+
+/* Typography */
+@theme {
+	--font-mono: 'IBM Plex Mono', sans-serif;
+	--font-sans: Inter, sans-serif;
+	--font-sans--font-feature-settings: 'cv11';
+}
+
+/* Colors */
+@theme {
+	--color-*: initial;
+
+	--color-black-a1: var(--black-a1);
+	--color-black-a2: var(--black-a2);
+	--color-black-a3: var(--black-a3);
+	--color-black-a4: var(--black-a4);
+	--color-black-a5: var(--black-a5);
+	--color-black-a6: var(--black-a6);
+	--color-black-a7: var(--black-a7);
+	--color-black-a8: var(--black-a8);
+	--color-black-a9: var(--black-a9);
+	--color-black-a10: var(--black-a10);
+	--color-black-a11: var(--black-a11);
+	--color-black-a12: var(--black-a12);
+
+	--color-white-a1: var(--white-a1);
+	--color-white-a2: var(--white-a2);
+	--color-white-a3: var(--white-a3);
+	--color-white-a4: var(--white-a4);
+	--color-white-a5: var(--white-a5);
+	--color-white-a6: var(--white-a6);
+	--color-white-a7: var(--white-a7);
+	--color-white-a8: var(--white-a8);
+	--color-white-a9: var(--white-a9);
+	--color-white-a10: var(--white-a10);
+	--color-white-a11: var(--white-a11);
+	--color-white-a12: var(--white-a12);
+
+	--color-blue-1: var(--blue-1);
+	--color-blue-2: var(--blue-2);
+	--color-blue-3: var(--blue-3);
+	--color-blue-4: var(--blue-4);
+	--color-blue-5: var(--blue-5);
+	--color-blue-6: var(--blue-6);
+	--color-blue-7: var(--blue-7);
+	--color-blue-8: var(--blue-8);
+	--color-blue-9: var(--blue-9);
+	--color-blue-10: var(--blue-10);
+	--color-blue-11: var(--blue-11);
+	--color-blue-12: var(--blue-12);
+
+	--color-blue-a1: var(--blue-a1);
+	--color-blue-a2: var(--blue-a2);
+	--color-blue-a3: var(--blue-a3);
+	--color-blue-a4: var(--blue-a4);
+	--color-blue-a5: var(--blue-a5);
+	--color-blue-a6: var(--blue-a6);
+	--color-blue-a7: var(--blue-a7);
+	--color-blue-a8: var(--blue-a8);
+	--color-blue-a9: var(--blue-a9);
+	--color-blue-a10: var(--blue-a10);
+	--color-blue-a11: var(--blue-a11);
+	--color-blue-a12: var(--blue-a12);
+
+	--color-grass-1: var(--grass-1);
+	--color-grass-2: var(--grass-2);
+	--color-grass-3: var(--grass-3);
+	--color-grass-4: var(--grass-4);
+	--color-grass-5: var(--grass-5);
+	--color-grass-6: var(--grass-6);
+	--color-grass-7: var(--grass-7);
+	--color-grass-8: var(--grass-8);
+	--color-grass-9: var(--grass-9);
+	--color-grass-10: var(--grass-10);
+	--color-grass-11: var(--grass-11);
+	--color-grass-12: var(--grass-12);
+
+	--color-grass-a1: var(--grass-a1);
+	--color-grass-a2: var(--grass-a2);
+	--color-grass-a3: var(--grass-a3);
+	--color-grass-a4: var(--grass-a4);
+	--color-grass-a5: var(--grass-a5);
+	--color-grass-a6: var(--grass-a6);
+	--color-grass-a7: var(--grass-a7);
+	--color-grass-a8: var(--grass-a8);
+	--color-grass-a9: var(--grass-a9);
+	--color-grass-a10: var(--grass-a10);
+	--color-grass-a11: var(--grass-a11);
+	--color-grass-a12: var(--grass-a12);
+
+	--color-sand-1: var(--sand-1);
+	--color-sand-2: var(--sand-2);
+	--color-sand-3: var(--sand-3);
+	--color-sand-4: var(--sand-4);
+	--color-sand-5: var(--sand-5);
+	--color-sand-6: var(--sand-6);
+	--color-sand-7: var(--sand-7);
+	--color-sand-8: var(--sand-8);
+	--color-sand-9: var(--sand-9);
+	--color-sand-10: var(--sand-10);
+	--color-sand-11: var(--sand-11);
+	--color-sand-12: var(--sand-12);
+
+	--color-sand-a1: var(--sand-a1);
+	--color-sand-a2: var(--sand-a2);
+	--color-sand-a3: var(--sand-a3);
+	--color-sand-a4: var(--sand-a4);
+	--color-sand-a5: var(--sand-a5);
+	--color-sand-a6: var(--sand-a6);
+	--color-sand-a7: var(--sand-a7);
+	--color-sand-a8: var(--sand-a8);
+	--color-sand-a9: var(--sand-a9);
+	--color-sand-a10: var(--sand-a10);
+	--color-sand-a11: var(--sand-a11);
+	--color-sand-a12: var(--sand-a12);
+
+	--color-tomato-1: var(--tomato-1);
+	--color-tomato-2: var(--tomato-2);
+	--color-tomato-3: var(--tomato-3);
+	--color-tomato-4: var(--tomato-4);
+	--color-tomato-5: var(--tomato-5);
+	--color-tomato-6: var(--tomato-6);
+	--color-tomato-7: var(--tomato-7);
+	--color-tomato-8: var(--tomato-8);
+	--color-tomato-9: var(--tomato-9);
+	--color-tomato-10: var(--tomato-10);
+	--color-tomato-11: var(--tomato-11);
+	--color-tomato-12: var(--tomato-12);
+
+	--color-tomato-a1: var(--tomato-a1);
+	--color-tomato-a2: var(--tomato-a2);
+	--color-tomato-a3: var(--tomato-a3);
+	--color-tomato-a4: var(--tomato-a4);
+	--color-tomato-a5: var(--tomato-a5);
+	--color-tomato-a6: var(--tomato-a6);
+	--color-tomato-a7: var(--tomato-a7);
+	--color-tomato-a8: var(--tomato-a8);
+	--color-tomato-a9: var(--tomato-a9);
+	--color-tomato-a10: var(--tomato-a10);
+	--color-tomato-a11: var(--tomato-a11);
+	--color-tomato-a12: var(--tomato-a12);
+}
+
+@layer base {
+	:root {
+		font-optical-sizing: auto;
+	}
+}

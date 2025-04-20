@@ -1,0 +1,44 @@
+[
+	{
+		"id": "019652c8-8419-73df-a4a1-3705bbae4736",
+		"type": "a",
+		"text": "She is exercising at the gym to stay healthy.",
+		"words": ["to", "She", "stay", "exercising", "is", "healthy.", "gym", "at", "the"],
+		"audioPath": "/exercises/2025-04-21/01.mp3"
+	},
+	{
+		"id": "019652ca-1599-75b2-9d14-b9092571f7ab",
+		"type": "a",
+		"text": "The doctor is checking the patient’s blood pressure.",
+		"words": ["patient’s", "checking", "is", "doctor", "blood", "the", "The", "pressure."],
+		"audioPath": "/exercises/2025-04-21/02.mp3"
+	},
+	{
+		"id": "019652ca-c04a-76ab-a518-68d4042c67e4",
+		"type": "a",
+		"text": "I am drinking more water to stay hydrated.",
+		"words": ["to", "drinking", "hydrated.", "more", "I", "stay", "water", "am"],
+		"audioPath": "/exercises/2025-04-21/03.mp3"
+	},
+	{
+		"id": "019652cc-107c-7620-b3e3-e5e79105b4d8",
+		"type": "a",
+		"text": "He is recovering from his illness and feeling better.",
+		"words": ["illness", "his", "feeling", "He", "recovering", "better.", "and", "from", "is"],
+		"audioPath": "/exercises/2025-04-21/04.mp3"
+	},
+	{
+		"id": "019652cc-6cba-7787-8445-31a38d950aa6",
+		"type": "a",
+		"text": "They are eating more vegetables to improve their diet.",
+		"words": ["improve", "vegetables", "diet.", "to", "They", "more", "eating", "are", "their"],
+		"audioPath": "/exercises/2025-04-21/05.mp3"
+	},
+	{
+		"id": "019652cc-cd85-7286-9cea-eca5af3b6c93",
+		"type": "a",
+		"text": "The nurse is checking the patient’s temperature.",
+		"words": ["temperature.", "nurse", "the", "checking", "The", "is", "patient’s"],
+		"audioPath": "/exercises/2025-04-21/06.mp3"
+	}
+]

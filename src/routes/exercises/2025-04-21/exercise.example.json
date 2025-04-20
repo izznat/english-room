@@ -1,0 +1,35 @@
+[
+	{
+		"id": "",
+		"type": "a",
+		"text": "",
+		"words": [],
+		"audioPath": "/exercises/2025-04-21/{ID}.mp3"
+	},
+	{
+		"id": "",
+		"type": "b",
+		"sections": [
+			{
+				"question": { "index": 1, "placeholder": "", "options": [""] },
+				"dialogue": [
+					{ "speaker": "a", "sentence": "" },
+					{ "speaker": "b", "sentence": "" }
+				]
+			},
+			{
+				"question": { "index": 1, "placeholder": "", "options": [""] },
+				"dialogue": [
+					{ "speaker": "a", "sentence": "" },
+					{ "speaker": "b", "sentence": "" }
+				]
+			}
+		]
+	},
+	{
+		"id": "",
+		"type": "c",
+		"imagePath": "/exercises/2025-04-21/{ID}.webp",
+		"audioPath": "/exercises/2025-04-21/{ID}.mp3"
+	}
+]
