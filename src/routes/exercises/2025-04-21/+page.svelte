@@ -42,11 +42,11 @@
 	{#if showConfetti}
 		<div use:confetti={{ stageHeight: 2400 }} class="absolute left-1/2"></div>
 	{/if}
-	<div class="border-sand-6 flex h-12 items-center border-x border-b border-dashed px-4">
+	<div class="border-sand-6 flex h-12 shrink-0 items-center border-x border-b border-dashed px-4">
 		<span class="font-mono text-xs tracking-widest uppercase">English Room</span>
 	</div>
 	<a
-		class="text-sand-11 hover:bg-sand-2 border-sand-6 flex gap-2 border-x border-b border-dashed p-4 font-mono text-xs tracking-widest uppercase transition-colors"
+		class="text-sand-11 hover:bg-sand-2 border-sand-6 flex shrink-0 gap-2 border-x border-b border-dashed p-4 font-mono text-xs tracking-widest uppercase transition-colors"
 		href="/exercises"
 		><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
 			><path
@@ -57,7 +57,7 @@
 			></path></svg
 		>Back to Exercises</a
 	>
-	<div class="border-sand-6 border-x border-b border-dashed p-4">
+	<div class="border-sand-6 shrink-0 border-x border-b border-dashed p-4">
 		<h1 class="text-xl">I'm Not Feeling Well</h1>
 	</div>
 	<div class="border-sand-6 flex grow flex-col border-x border-dashed">

@@ -1,8 +1,8 @@
 <div class="flex h-full flex-col">
-	<div class="border-sand-6 flex h-12 items-center border-x border-b border-dashed px-4">
+	<div class="border-sand-6 flex h-12 shrink-0 items-center border-x border-b border-dashed px-4">
 		<span class="font-mono text-xs tracking-widest uppercase">English Room</span>
 	</div>
-	<div class="border-sand-6 border-x border-b border-dashed p-4">
+	<div class="border-sand-6 shrink-0 border-x border-b border-dashed p-4">
 		<h1 class="text-xl">Exercises</h1>
 	</div>
 	<div class="border-sand-6 grow border-x border-dashed pb-4">

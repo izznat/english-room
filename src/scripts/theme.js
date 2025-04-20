@@ -2,7 +2,8 @@
 	let matchDark = window.matchMedia('(prefers-color-scheme: dark)');
 	let html = document.documentElement;
 
-	function apply(dark: boolean) {
+	/** @param {boolean} dark  */
+	function apply(dark) {
 		if (dark) {
 			html.style.colorScheme = 'dark';
 			html.classList.remove('light');
