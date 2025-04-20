@@ -40,7 +40,7 @@
 
 <div class="flex h-full flex-col">
 	{#if showConfetti}
-		<div class="absolute inset-0 overflow-hidden">
+		<div class="pointer-events-none absolute inset-0 overflow-hidden">
 			<div use:confetti={{ stageHeight: 2400 }} class="absolute left-1/2"></div>
 		</div>
 	{/if}
@@ -160,6 +160,7 @@
 								document.body.style.overflow = 'hidden';
 								setTimeout(() => {
 									document.body.style.overflow = 'auto';
+									showConfetti = false;
 								}, 3500);
 								showConfetti = true;
 
