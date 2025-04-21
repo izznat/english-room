@@ -5,7 +5,7 @@
 	type ToastData = { description: string; type: 'error' | 'success' };
 
 	const toaster = new Toaster<ToastData>({
-		closeDelay: 2000
+		closeDelay: 3000
 	});
 
 	export const pushToast = toaster.addToast;

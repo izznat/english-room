@@ -20,7 +20,7 @@
 
 <script lang="ts">
 	import AudioPlayer from '$lib/bits/audio-player.svelte';
-	import { tick, untrack } from 'svelte';
+	import { onMount, tick, untrack } from 'svelte';
 	import { goto } from '$app/navigation';
 	import { pushToast } from '$lib/bits/toaster.svelte';
 	import { confetti } from '@neoconfetti/svelte';
@@ -36,6 +36,22 @@
 
 	let arrangedWords = $state<string[]>([]);
 	let shuffledWords = $state(untrack(() => question.words));
+
+	let correctAudio: HTMLAudioElement;
+	let incorrectAudio: HTMLAudioElement;
+
+	onMount(() => {
+		correctAudio = new Audio('/sounds/correct.webm');
+		incorrectAudio = new Audio('/sounds/incorrect.m4a');
+
+		correctAudio.addEventListener('ended', () => {
+			correctAudio.currentTime = 0;
+		});
+
+		incorrectAudio.addEventListener('ended', () => {
+			incorrectAudio.currentTime = 0;
+		});
+	});
 </script>
 
 <div class="flex h-full flex-col">
@@ -144,15 +160,17 @@
 		<div class="border-sand-6 border-t border-dashed p-2">
 			<button
 				class={[
-					'flex h-12 w-full cursor-pointer items-center justify-center font-mono tracking-widest uppercase',
+					'flex h-12 w-full cursor-pointer items-center justify-center rounded-full border border-dashed font-mono text-sm tracking-widest uppercase',
 					isCorrect
-						? 'bg-grass-2 text-grass-9 hover:bg-grass-3'
-						: 'bg-blue-2 text-blue-9 hover:bg-blue-3'
+						? 'bg-grass-2 text-grass-9 border-grass-6 hover:bg-grass-3'
+						: 'bg-blue-2 text-blue-9 hover:bg-blue-3 border-blue-6'
 				]}
 				onclick={() => {
 					if (!isCorrect) {
 						if (arrangedWords.join(' ').toLowerCase() === question.text.toLowerCase()) {
 							isCorrect = true;
+
+							correctAudio.play();
 
 							if (number < exercise.length) {
 								pushToast({ data: { type: 'success', description: 'Awesome! Keep it up!' } });
@@ -169,6 +187,8 @@
 								});
 							}
 						} else {
+							incorrectAudio.play();
+
 							pushToast({ data: { type: 'error', description: 'Wrong answer. Try again!' } });
 						}
 					} else {
