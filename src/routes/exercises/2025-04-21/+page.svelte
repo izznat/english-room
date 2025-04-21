@@ -96,25 +96,13 @@
 						</h3>
 						<button
 							aria-label="Reset"
-							class="bg-blue-2 text-blue-9 hover:bg-blue-3 flex size-8 cursor-pointer items-center justify-center rounded-full transition-colors"
+							class="bg-blue-2 text-blue-9 hover:bg-blue-3 flex h-8 cursor-pointer items-center justify-center rounded-full px-3 font-mono text-xs font-semibold tracking-widest uppercase transition-colors"
 							onclick={() => {
 								arrangedWords = [];
 								shuffledWords = question.words;
 							}}
 						>
-							<svg
-								width="15"
-								height="15"
-								viewBox="0 0 15 15"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-								><path
-									d="M4.85355 2.14645C5.04882 2.34171 5.04882 2.65829 4.85355 2.85355L3.70711 4H9C11.4853 4 13.5 6.01472 13.5 8.5C13.5 10.9853 11.4853 13 9 13H5C4.72386 13 4.5 12.7761 4.5 12.5C4.5 12.2239 4.72386 12 5 12H9C10.933 12 12.5 10.433 12.5 8.5C12.5 6.567 10.933 5 9 5H3.70711L4.85355 6.14645C5.04882 6.34171 5.04882 6.65829 4.85355 6.85355C4.65829 7.04882 4.34171 7.04882 4.14645 6.85355L2.14645 4.85355C1.95118 4.65829 1.95118 4.34171 2.14645 4.14645L4.14645 2.14645C4.34171 1.95118 4.65829 1.95118 4.85355 2.14645Z"
-									fill="currentColor"
-									fill-rule="evenodd"
-									clip-rule="evenodd"
-								></path></svg
-							>
+							Reset
 						</button>
 					</div>
 					<div class="flex flex-wrap gap-4 p-4">
@@ -160,7 +148,7 @@
 		<div class="border-sand-6 border-t border-dashed p-2">
 			<button
 				class={[
-					'flex h-12 w-full cursor-pointer items-center justify-center rounded-full border border-dashed font-mono text-sm tracking-widest uppercase',
+					'flex h-12 w-full cursor-pointer items-center justify-center rounded-full border border-dashed font-mono text-sm font-semibold tracking-widest uppercase transition-colors',
 					isCorrect
 						? 'bg-grass-2 text-grass-9 border-grass-6 hover:bg-grass-3'
 						: 'bg-blue-2 text-blue-9 hover:bg-blue-3 border-blue-6'
