@@ -1,0 +1,104 @@
+[
+	{
+		"id": "01967966-a468-77cb-a2e9-5ffa284ac912",
+		"type": "a",
+		"text": "I didn’t quite catch that. Could you explain it again, please?",
+		"words": [
+			"you",
+			"again,",
+			"it",
+			"catch",
+			"Could",
+			"explain",
+			"didn’t",
+			"I",
+			"that.",
+			"please?",
+			"quite"
+		],
+		"audioPath": "/exercises/2025-04-28/01.mp3"
+	},
+	{
+		"id": "01967968-0e53-7708-a6f3-f6115a809147",
+		"type": "a",
+		"text": "I’m a bit confused. Could you break it down for me, please?",
+		"words": [
+			"break",
+			"confused.",
+			"down",
+			"me,",
+			"a",
+			"you",
+			"I’m",
+			"for",
+			"Could",
+			"please?",
+			"bit",
+			"it"
+		],
+		"audioPath": "/exercises/2025-04-28/02.mp3"
+	},
+	{
+		"id": "01967969-ee4e-732d-9497-f747c0c16362",
+		"type": "a",
+		"text": "I beg your pardon? Could you go over it again?",
+		"words": ["your", "pardon?", "over", "you", "go", "I", "beg", "Could", "it", "again?"],
+		"audioPath": "/exercises/2025-04-28/03.mp3"
+	},
+	{
+		"id": "0196796c-3e10-7508-bab3-cbabd309a9d8",
+		"type": "a",
+		"text": "I’m a little confused. Would you mind to explain it more slowly, please?",
+		"words": [
+			"it",
+			"you",
+			"slowly,",
+			"more",
+			"mind",
+			"please?",
+			"explain",
+			"a",
+			"to",
+			"confused.",
+			"Would",
+			"I’m",
+			"little"
+		],
+		"audioPath": "/exercises/2025-04-28/04.mp3"
+	},
+	{
+		"id": "0196796d-8186-7514-917e-1a74fb269918",
+		"type": "a",
+		"text": "Could you give an example to help me understand, please?",
+		"words": [
+			"example",
+			"an",
+			"understand,",
+			"give",
+			"me",
+			"to",
+			"Could",
+			"you",
+			"help",
+			"please?"
+		],
+		"audioPath": "/exercises/2025-04-28/05.mp3"
+	},
+	{
+		"id": "0196796e-8a9a-71c5-8d44-1b6d4f4941a0",
+		"type": "a",
+		"text": "Could you clarify the instructions for this activity, please?",
+		"words": [
+			"activity,",
+			"clarify",
+			"instructions",
+			"Could",
+			"you",
+			"for",
+			"this",
+			"please?",
+			"the"
+		],
+		"audioPath": "/exercises/2025-04-28/06.mp3"
+	}
+]
