@@ -59,7 +59,7 @@ let s = p.spinner();
 s.start('Post-processing sentence and generating audio.');
 
 let text = input.text.trim().replace(/\s+/, ' ');
-if (!text.endsWith('.')) text += '.';
+if (!text.endsWith('.') && !text.endsWith('?') && !text.endsWith('!')) text += '.';
 
 let words = shuffle(text.split(' '));
 
@@ -81,6 +81,7 @@ let metaPath = path.resolve(process.cwd(), `./src/routes/exercises/${input.date}
 try {
 	await fs.access(metaPath, fs.constants.F_OK);
 } catch {
+	await fs.mkdir(path.dirname(metaPath), { recursive: true });
 	await fs.writeFile(metaPath, '[]', 'utf8');
 }
 
@@ -95,6 +96,12 @@ let exercise = JSON.parse(await fs.readFile(metaPath, 'utf8')) as Array<{
 let order = padStart(String(exercise.length + 1), 2, '0');
 
 let audioPath = path.resolve(process.cwd(), `./static/exercises/${input.date}/${order}.mp3`);
+
+try {
+	await fs.access(audioPath, fs.constants.F_OK);
+} catch {
+	await fs.mkdir(path.dirname(audioPath), { recursive: true });
+}
 
 await fs.writeFile(audioPath, new DataView(await audio.arrayBuffer()));
 
