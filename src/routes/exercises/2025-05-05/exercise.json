@@ -1,0 +1,44 @@
+[
+	{
+		"id": "01969bf1-66da-76ee-8078-9bc7e63074c0",
+		"type": "a",
+		"text": "Which book did you choose to read?",
+		"words": ["read?", "choose", "to", "you", "did", "Which", "book"],
+		"audioPath": "/exercises/2025-05-05/01.mp3"
+	},
+	{
+		"id": "01969bf1-c530-716d-9a3e-a2f03577ea90",
+		"type": "a",
+		"text": "What color is the sky in your picture?",
+		"words": ["color", "the", "picture?", "in", "sky", "What", "your", "is"],
+		"audioPath": "/exercises/2025-05-05/02.mp3"
+	},
+	{
+		"id": "01969bf2-39e1-734e-9a40-0645d10f1721",
+		"type": "a",
+		"text": "Whose pencil case is this?",
+		"words": ["this?", "pencil", "is", "Whose", "case"],
+		"audioPath": "/exercises/2025-05-05/03.mp3"
+	},
+	{
+		"id": "01969bf2-abff-7682-90e2-b5407cb20aae",
+		"type": "a",
+		"text": "Which page does the exercise start on?",
+		"words": ["page", "start", "does", "on?", "the", "Which", "exercise"],
+		"audioPath": "/exercises/2025-05-05/04.mp3"
+	},
+	{
+		"id": "01969bf3-39f0-706b-991b-564f2c2567c3",
+		"type": "a",
+		"text": "What kind of shape is this?",
+		"words": ["is", "kind", "shape", "What", "this?", "of"],
+		"audioPath": "/exercises/2025-05-05/05.mp3"
+	},
+	{
+		"id": "01969bf3-7adb-71ac-9788-fc11a88938f0",
+		"type": "a",
+		"text": "Which group are you working with today?",
+		"words": ["working", "today?", "Which", "group", "with", "are", "you"],
+		"audioPath": "/exercises/2025-05-05/06.mp3"
+	}
+]
