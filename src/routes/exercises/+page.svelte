@@ -6,6 +6,19 @@
 		<h1 class="text-xl">Exercises</h1>
 	</div>
 	<div class="border-sand-6 grow border-x border-dashed pb-4">
+		<li class="border-sand-6 flex border-b border-dashed">
+			<a
+				class="hover:bg-blue-4 flex grow flex-col p-4 transition-colors"
+				href="/exercises/2025-05-19"
+			>
+				<span class="text-sand-11 font-mono text-xs tracking-widest uppercase">
+					{new Date('2025-05-19').toLocaleDateString('en-ID', {
+						dateStyle: 'full'
+					})}
+				</span>
+				<h2 class="mt-1 text-xl">Opening a Class</h2>
+			</a>
+		</li>
 		<ul class="flex flex-col">
 			<li class="border-sand-6 flex border-b border-dashed">
 				<a
